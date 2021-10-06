@@ -115,6 +115,7 @@ void UPoseUpdate::UpdateToNextFrame() {
 		// FTransform newTransform(currentTransform.Rotator() +fix, currentTransform.GetTranslation(), currentTransform.GetScale3D()); 
 		// FTransform newTransform(originalRotation, currentTransform.GetTranslation(), currentTransform.GetScale3D()); 
 		// FTransform newTransform(newRotation+originalRotation, currentTransform.GetTranslation(), currentTransform.GetScale3D()); 
+		// FTransform newTransform(newRotation, currentTransform.GetTranslation(), currentTransform.GetScale3D()); 
 		FTransform newTransform(newRotation+fix, currentTransform.GetTranslation(), currentTransform.GetScale3D()); 
 		// FTransform newTransform(newRotation+originalRotation+fix, currentTransform.GetTranslation(), currentTransform.GetScale3D()); 
 		// FTransform newTransform = GetBoneTransformUpdate(sourceBone);
@@ -202,9 +203,9 @@ FTransform UPoseUpdate::GetBoneTransformUpdate(FName boneName) {
 
 
 void UPoseUpdate::BuildSkeletonMapping() {
-	skeletonMapping.Add(FName(TEXT("body_world")), 	FName(TEXT("root")));
-	skeletonMapping.Add(FName(TEXT("b_root")), 	FName(TEXT("pelvis")));
-	skeletonMapping.Add(FName(TEXT("b_spine0")), 	FName(TEXT("spine_01")));
+	// skeletonMapping.Add(FName(TEXT("body_world")), 	FName(TEXT("root")));
+	// skeletonMapping.Add(FName(TEXT("b_root")), 	FName(TEXT("pelvis")));
+	// skeletonMapping.Add(FName(TEXT("b_spine0")), 	FName(TEXT("spine_01")));
 	// skeletonMapping.Add(FName(TEXT("b_spine1")), 	FName(TEXT("spine_02")));
 	// skeletonMapping.Add(FName(TEXT("b_spine2")), 	FName(TEXT("spine_03")));
 	

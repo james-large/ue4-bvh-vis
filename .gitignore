@@ -75,6 +75,3 @@ DerivedDataCache/*
 
 # James added
 .vscode
-HelloWorld3rdPerson.code-workspace
-HelloWorld3rdPerson.uproject
-.ignore
